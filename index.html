@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MwSt-Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mehrwertsteuer-Rechner</h1>
+    </header>
+    <section>
+        <form action="" return="false">
+            <p>Was soll berechnet werden?</p>
+            <div>
+                <input type="radio" id="nzb" name="was" value="HTML" checked required onclick="headlineChange()">
+                <label for="was">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+            </div>
+            <div>
+                <input type="radio" id="bzn" name="was" value="HTML" required onclick="headlineChange()">
+                <label for="was">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+            </div>
+            <p>Mehrwertsteuersatz</p>
+            <div>
+                <input type="radio" id="neunzehn" name="satz" value="19%" required>
+                <label for="satz">19%</label>
+                <input type="radio" id="sieben" name="satz" value="7%" required>
+                <label for="satz">7%</label>
+            </div>
+            <h2 id="headline"></h2>
+            <!-- <p>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro*</p>
+            <p>Bruttobetrag (Preis inklusive Mehrwertsteuer) in Euro*</p> -->
+            <input type="number" name="betrag" id="euro" class="money" required>
+            <input type="button" value="BERECHNEN" class="btn" onclick="berechnen()">
+            <p id="ergebnis" class="ergebnis"></p>
+        </form>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

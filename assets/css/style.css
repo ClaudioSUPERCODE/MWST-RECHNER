@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: rgb(54, 60, 67);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: rgb(211, 223, 239);
+    line-height: 2;
+    background-image: url("../pics/mwst-bg.png");
+}
+
+span {
+    font-weight: bolder;
+    color: rgb(78, 19, 255);
+}
+
+.btn {
+    background-color: rgb(10, 177, 218);
+    color: white;
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1rem;
+    margin: 0 1rem 2rem 1rem;
+    cursor: pointer;
+}
+
+.money {
+    padding: 0.5rem 0;
+    margin: 0 1rem 2rem 1rem;
+    border-radius: 0.5rem;
+}
+
+div {
+    margin: 0 1rem;
+}
+
+.ergebnis {
+    margin: 0 1rem;
+}
